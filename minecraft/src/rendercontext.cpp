@@ -71,11 +71,3 @@ GLFWwindow* RenderContext::GetWindow()
 {
 	return m_window;
 }
-
-void ProcessInput(GLFWwindow* window)
-{
-	if (!glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-		glfwSetWindowShouldClose(window, true);
-
-	float cameraSpeed = static_cast<float>(2.5 * deltaTime);
-}

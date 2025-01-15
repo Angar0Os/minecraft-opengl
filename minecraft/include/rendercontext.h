@@ -6,7 +6,7 @@
 
 struct GLFWwindow;
 
-namespace engine::Core
+namespace engine::core
 {
 	struct RenderContextDescriptor
 	{
@@ -30,9 +30,6 @@ namespace engine::Core
 		GLFWwindow* GetWindow();
 
 		bool		SwapBuffer();
-		void		MouseCallback(GLFWwindow* window, double xpos, double ypos);
-		void		ScrollCallback(GLFWwindow* window, double xoffset, double yoffset);
-		void		ProcessInput(GLFWwindow* window);
 	};
 }
 

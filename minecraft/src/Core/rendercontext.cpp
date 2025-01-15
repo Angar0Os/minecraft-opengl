@@ -1,4 +1,4 @@
-#include <Core/rendercontext.h>
+#include <rendercontext.h>
 
 #include <iostream>
 
@@ -6,15 +6,9 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
-#define STB_IMAGE_IMPLEMENTATION
-#include <stb_image.h>
-
 #pragma comment(lib, "OpenGL32.lib")
 #pragma comment(lib, "glew32s.lib")
 #pragma comment(lib, "glfw3.lib")
-
-
-//using namespace engine::core;
 
 RenderContext::RenderContext(const RenderContextDescriptor& desc)
 {
@@ -70,12 +64,4 @@ RenderContext::~RenderContext()
 GLFWwindow* RenderContext::GetWindow()
 {
 	return m_window;
-}
-
-void ProcessInput(GLFWwindow* window)
-{
-	if (!glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-		glfwSetWindowShouldClose(window, true);
-
-	float cameraSpeed = static_cast<float>(2.5 * deltaTime);
 }

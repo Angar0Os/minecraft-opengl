@@ -131,11 +131,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\graphics\renderer.cpp" />
+    <ClCompile Include="..\src\graphics\shader.cpp" />
     <ClCompile Include="..\src\main.cpp" />
     <ClCompile Include="..\src\rendercontext.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\graphics\renderer.h" />
+    <ClInclude Include="..\include\graphics\shader.h" />
     <ClInclude Include="..\include\rendercontext.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\assets\ShaderFiles\shader.fs" />
+    <None Include="..\assets\ShaderFiles\shader.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\assets\Textures\awesomeface.png" />
+    <Image Include="..\assets\Textures\container.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

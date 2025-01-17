@@ -21,6 +21,7 @@ namespace engine::core
 	private:
 		GLFWwindow* m_window = nullptr;
 
+		void ProcessKeyCallbacks(GLFWwindow* window, int key, int scancode, int action, int mods);
 	public:
 		explicit RenderContext(const RenderContextDescriptor& desc);
 		~RenderContext() noexcept;

@@ -131,6 +131,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\core\input.cpp" />
     <ClCompile Include="..\src\core\rendercontext.cpp" />
     <ClCompile Include="..\src\main.cpp" />
   </ItemGroup>
@@ -139,11 +140,10 @@
     <None Include="..\assets\ShaderFiles\shader.vs" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\assets\Textures\awesomeface.png" />
-    <Image Include="..\assets\Textures\container.jpg" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="..\include\core\input.h" />
+    <ClInclude Include="..\include\core\inputaction.h" />
     <ClInclude Include="..\include\core\rendercontext.h" />
+    <ClInclude Include="..\include\game\gametimehandler.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

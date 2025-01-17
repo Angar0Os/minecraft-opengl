@@ -131,18 +131,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\Core\input.cpp" />
-    <ClCompile Include="..\src\graphics\renderer.cpp" />
-    <ClCompile Include="..\src\graphics\shader.cpp" />
+    <ClCompile Include="..\src\core\rendercontext.cpp" />
     <ClCompile Include="..\src\main.cpp" />
-    <ClCompile Include="..\src\rendercontext.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\include\Core\input.h" />
-    <ClInclude Include="..\include\Core\inputAction.h" />
-    <ClInclude Include="..\include\graphics\renderer.h" />
-    <ClInclude Include="..\include\graphics\shader.h" />
-    <ClInclude Include="..\include\rendercontext.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\assets\ShaderFiles\shader.fs" />
@@ -151,6 +141,9 @@
   <ItemGroup>
     <Image Include="..\assets\Textures\awesomeface.png" />
     <Image Include="..\assets\Textures\container.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\core\rendercontext.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
